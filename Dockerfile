@@ -5,4 +5,5 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install --only=prod
 COPY . .
+USER 1001
 CMD ["npm", "start"]
